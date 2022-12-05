@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Informações Gerais</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <link href="style.css" rel="stylesheet">
+    <div class='container'>
+        <div class="menu-content">
+            <label class="open-menu-all" for="open-menu-all">
+                <input class="input-menu-all" id="open-menu-all" type="checkbox" name="menu-open" />
+                <div class="navegacao-mobile">
+                    <span class="linha-menu"></span>
+                    <span class="linha-menu"></span>
+                    <span class="linha-menu"></span>
+                </div>
+                <ul class="list-menu">
+                    <span class="material-symbols-outlined">
+                        manage_search
+                    </span>
+                    <li class="item-menu">
+
+                        <a href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="facilidades.html">Facilidades</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="dificuldades.html">Dificuldades</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="autoavaliacao.html">Auto-Avaliação</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="infogerais.html">Informações Gerais</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="localizaçao.html">Localização</a>
+                    </li>
+                </ul>
+            </label>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="container">
+        <h3>Informações Gerais</h3>
+        <form action="/action_page.php">
+            <label for="fnamsse">Primeiro Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Seu
+nome..." required>
+            <label for="lname">Último nome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu último
+nome" required>
+            <label for="country">País</label>
+            <select id="country" name="country">
+                <option value="australia">Argentina</option>
+                <option value="australia">Brasil</option>
+                <option value="canada">Uruguai</option>
+                <option value="usa">Estados Unidos</option>
+            </select>
+            <fieldset>
+                <legend>Telefone:</legend>
+                <div class='telefone'>
+                    <label for="celular">Celular</label>
+                    <input type="text" ninputame="celular"><br>
+                </div>
+                <div class='telefone'>
+                    <label for="residencial">Localização da Casa</label>
+                    <input type="text" name="residencial"><br>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Gênero:</legend>
+                <label for='rbfem'>Feminino</label>
+                <input type='radio' name="rbsexo" value='F' id='rbfem'>
+                <label for='rbmasc'>Masculino</label>
+                <input type='radio' name="rbsexo" value='F' id='rbmasc'>
+                <label for='rboutro'>Outro</label>
+                <input type='radio' name="rbsexo" value='F' id='routro'>
+            </fieldset>
+            <br>
+            <div class="rodape">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+    <p id="copyright"> Copyright 2022 Portfólio</p>
+</body>
+
+</html>

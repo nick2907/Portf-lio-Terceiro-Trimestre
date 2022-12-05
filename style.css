@@ -1,0 +1,264 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 75px;
+    background: linear-gradient(to right, #b0aee7, #e3a5d0);
+}
+
+
+th:hover {
+    background: linear-gradient(to right, #9d9ae9, #e3a5d0);
+    color: rgb(107, 72, 110);
+
+}
+
+h1 {
+    color: darkmagenta;
+    font-family: 'Silkscreen', cursive;
+    font-size: 35px;
+}
+
+h2 {
+    color: #523362;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+
+    color: #5d406b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.produto {
+    box-shadow: 0 0 5px black;
+    border: 5px solid rgb(255, 211, 255);
+    background: linear-gradient(to right, #84afeb, rgb(129, 28, 129));
+    margin: auto;
+    text-align: center;
+    font-family: 'Alkalami', serif;
+    font-size: 25px;
+    border-radius: 30px;
+}
+
+#copyright {
+    font-family: 'Alkalami';
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.material-symbols-outlined {
+    box-align: right;
+}
+
+img {
+    float: inline-start;
+    border-radius: 45px;
+}
+
+.capuccino {
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid rgba(139, 0, 139, 0.356);
+}
+
+.cafearabico {
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid rgba(139, 0, 139, 0.356);
+}
+
+.misturadacasa {
+    padding: 20px;
+    border-radius: 30px;
+    border: 5px solid rgba(139, 0, 139, 0.356);
+}
+
+.cap {
+    list-style-type: none;
+}
+
+table,
+td,
+th {
+    border: 2px solid #476664;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: #8aa9d7;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: rgba(139, 0, 139, 0.356);
+}
+
+tbody>tr:hover {
+    background-color: rgba(59, 6, 59, 0.356);
+}
+
+#centro {
+    margin: auto;
+    width: 35%;
+}
+
+
+#cabecalho {
+    margin: auto;
+    width: 35%;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #894caf;
+    padding: 10px;
+    background-color: rgb(254, 239, 255);
+}
+
+input,
+select,
+fieldset {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 0 0;
+    border: 2px solid rgb(225, 173, 230);
+    box-sizing: border-box;
+}
+
+.rodape {
+    margin: auto;
+    width: 60%;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 40%;
+    background-color: #894caf;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    background-color: white;
+    background-image: url('../imagens/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+input:invalid {
+    border-color: rgb(225, 173, 230);
+}
+
+input[type=radio] {
+    width: auto;
+    margin: 10px;
+}
+
+.telefone {
+    width: 45%;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 991px) {
+    .menu-content {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .list-menu {
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+        background: rgb(206, 179, 207);
+        box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.3);
+    }
+
+    .item-menu {
+        text-align: center;
+
+    }
+
+    .item-menu .link-menu {
+        padding: 15px;
+        color: #555;
+        display: block;
+        transition: .4s;
+        cursor: pointer;
+        text-align: center
+    }
+
+    .item-menu .link-menu:hover {
+        background: #8f4d8c74;
+    }
+
+    .navegacao-mobile {
+        display: none !important;
+    }
+}
+
+.navegacao-mobile {
+    background: rgb(190, 154, 187);
+    padding: 10px;
+    display: block;
+    width: 50px;
+    cursor: pointer;
+}
+
+.linha-menu {
+    width: 25px;
+    height: 5px;
+    border-radius: 5px;
+    background: rgb(101, 54, 89);
+    margin: 10px;
+    display: block;
+}
+
+.input-menu-all {
+    display: none !important;
+}
+
+.list-menu {
+    display: none;
+    width: 100%;
+    background: #fff;
+    box-shadow: 5px 10px 50px -15px rgba(0, 0, 0, 0.3);
+}
+
+.item-menu {
+    flex: auto;
+}
+
+.item-menu .link-menu {
+    padding: 25px;
+    color: rgb(101, 54, 89);
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center
+}
+
+.input-menu-all:checked~.list-menu {
+    display: block;
+
+}
+
+.input-menu-all:checked~.list-menu .link-menu {
+    text-align: left;
+}
